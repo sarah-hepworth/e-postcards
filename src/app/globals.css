@@ -1,3 +1,13 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  font: var(--font);
+}
+
 :root {
   --brand-pink: #F72585;
   --brand-pink-2: #B5179E;
@@ -10,7 +20,8 @@
   --brand-blue-2: #3F37C9;
   --brand-blue-3: #4361EE;
   --brand-blue-4: #4895EF;
-  --brand-blue-5: #4CC9F0;
 
-  
+  --brand-black: #0b1c24;
+
+  --font: 18px / 1.5 "Roboto-Black", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 }
