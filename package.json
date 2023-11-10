@@ -1,5 +1,5 @@
 {
-  "name": "something",
+  "name": "e-postcards",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -19,6 +19,9 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.0.2"
+    "eslint-config-next": "14.0.2",
+    "eslint-config-prettier": "^9.0",
+    "sass": "^1.69",
+    "prettier": "^3.0"
   }
 }
