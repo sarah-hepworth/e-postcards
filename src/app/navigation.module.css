@@ -1,0 +1,35 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--brand-purple-3);
+  box-shadow: 10px 10px 30px var(--brand-purple-4),
+  -10px -10px 50px var(--brand-purple-4);
+  padding: 2em;
+
+  .titleContainer {
+    margin-bottom: 2em;
+    text-align: center;
+
+    .title {
+      margin-bottom: 0.5em;
+      letter-spacing: 2px;
+      font-size: 2em;
+    }
+  }
+
+  .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .item {
+      margin: 0 2em;
+    }
+  }
+}
