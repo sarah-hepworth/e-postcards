@@ -23,5 +23,8 @@ body {
 
   --brand-black: #0b1c24;
 
-  --font: 18px / 1.5 "Roboto-Black", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+  --font: 18px / 1.5 "Roboto-Regular", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+  --font-medium: 18px / 1.5 "Roboto-Medium", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+  --font-bold: 18px / 1.5 "Roboto-Bold", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+  --font-italic: 18px / 1.5 "Roboto-Italic", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
 }
