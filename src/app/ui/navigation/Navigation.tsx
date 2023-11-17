@@ -1,6 +1,7 @@
 import { FC, ReactElement } from "react";
 import styles from "@/app/navigation.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export const Navigation: FC = (): ReactElement => {
   return (
@@ -8,7 +9,9 @@ export const Navigation: FC = (): ReactElement => {
       <div className={styles.titleRow}>
         <div className={styles.logoArea}>
           <div className={styles.titleContainer}>
-            <h1 className={styles.title}>Jellywish</h1>
+            <Link href="/">
+              <h1 className={`styles.title text-3xl font-bold underline`}>Jellywish</h1>
+            </Link>
             <span className={styles.tagline}>Postcards delivered straight to their mailbox</span>
           </div>
 
@@ -38,7 +41,9 @@ export const Navigation: FC = (): ReactElement => {
       </div>
 
       <div className={styles.items}>
-        <div className={styles.item}>Postcards</div>
+        <Link href="/product" className={styles.item}>
+          Postcards
+        </Link>
         <div className={styles.item}>Personalise your own</div>
         <div className={styles.item}>Holiday photobooks</div>
         <div className={styles.item}>Group postcards</div>
