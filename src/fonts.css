@@ -1,32 +1,24 @@
 @font-face {
-  font-family: 'Roboto-Black';
+  font-family: Roboto-Black;
   font-display: swap;
   src:
-    local('Roboto-Black');
+    url("../fonts/Roboto-Black.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-BlackItalic';
+  font-family: Roboto-Regular;
   font-display: swap;
   src:
-    local('Roboto-BlackItalic');
+    local("Roboto-Regular"),
+    url("../fonts/Roboto-Regular.ttf") format("ttf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Bold';
-  font-display: swap;
-  src:
-    local('Roboto-Bold');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto-BoldItalic';
+  font-family: Roboto-BlackItalic;
   font-display: swap;
   src:
     local('Roboto-BlackItalic');
@@ -35,7 +27,17 @@
 }
 
 @font-face {
-  font-family: 'Roboto-Italic';
+  font-family: Roboto-Bold;
+  font-display: swap;
+  src:
+    local('Roboto-Bold'),
+    url("../fonts/Roboto-Bold.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto-BoldItalic;
   font-display: swap;
   src:
     local('Roboto-BlackItalic');
@@ -44,7 +46,16 @@
 }
 
 @font-face {
-  font-family: 'Roboto-Light';
+  font-family: Roboto-Italic;
+  font-display: swap;
+  src:
+    local('Roboto-BlackItalic');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto-Light;
   font-display: swap;
   src:
     local('Roboto-Light');
@@ -53,7 +64,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto-LightItalic';
+  font-family: Roboto-LightItalic;
   font-display: swap;
   src:
     local('Roboto-LightItalic');
@@ -62,7 +73,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto-Medium';
+  font-family: Roboto-Medium;
   font-display: swap;
   src:
     local('Roboto-Medium');
@@ -71,7 +82,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto-MediumItalic';
+  font-family: Roboto-MediumItalic;
   font-display: swap;
   src:
     local('Roboto-MediumItalic');
@@ -80,16 +91,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto-Regular';
-  font-display: swap;
-  src:
-    local('Roboto-Regular');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto-Thin';
+  font-family: Roboto-Thin;
   font-display: swap;
   src:
     local('Roboto-Thin');
@@ -98,7 +100,7 @@
 }
 
 @font-face {
-  font-family: 'Roboto-ThinItalic';
+  font-family: Roboto-ThinItalic;
   font-display: swap;
   src:
     local('Roboto-ThinItalic');

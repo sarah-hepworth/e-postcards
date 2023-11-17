@@ -2,12 +2,11 @@ html,
 body,
 #root {
   height: 100%;
-  background-color: var(--brand-purple-3)
+  background-color: #fff
 }
 
 body {
-  font: var(--font);
-  color: white;
+  font: var(--font) !important;
   margin: 0;
 }
 
@@ -31,8 +30,9 @@ h1, h2, h3, h4, h5 {
 
   --brand-black: #0b1c24;
 
-  --font: 18px / 1.5 "Roboto-Regular", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
-  --font-medium: 18px / 1.5 "Roboto-Medium", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
-  --font-bold: 18px / 1.5 "Roboto-Bold", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
-  --font-italic: 18px / 1.5 "Roboto-Italic", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+  --font: 18px / 1.5 "Roboto-Regular";
+  --font-medium: 18px / 1.5 "Roboto-Medium";
+  --font-bold: 18px / 1.5 "Roboto-Bold";
+  --font-italic: 18px / 1.5 "Roboto-Italic";
+  --font-light-italic: 18px / 1.5 "Roboto-LightItalic";
 }
