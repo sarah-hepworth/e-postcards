@@ -8,6 +8,6 @@
 <path d="M106.245 43.0057C106.586 39.9364 109.57 35.0057 112.745 35.0057C116.593 35.0057 116.637 39.7016 119.245 41.0057" stroke="#560BAD" stroke-width="3" stroke-linecap="round"/>
 <path d="M141.245 43.0057C141.586 39.9364 144.57 35.0057 147.745 35.0057C151.593 35.0057 151.637 39.7016 154.245 41.0057" stroke="#560BAD" stroke-width="3" stroke-linecap="round"/>
 <path d="M124 136C121.356 140.7 114.22 146.585 108.389 143.444C102.564 140.308 96.8573 138.857 92 134C89.3419 131.342 87.6154 128.06 85 125.444C78.578 119.022 73.2605 111.329 63.9444 109C56.2659 107.08 41.0194 107.961 37 116" stroke="#560BAD" stroke-width="3" stroke-linecap="round"/>
-<rect x="1.95679" y="86.2604" width="72" height="46" rx="2.5" transform="rotate(-22.2851 1.95679 86.2604)" fill="white" stroke="#560BAD" stroke-width="3"/>
-<rect x="50.9568" y="74.1018" width="16.2046" height="13.7497" rx="2.5" transform="rotate(-22.2851 50.9568 74.1018)" fill="white" stroke="#560BAD" stroke-width="3"/>
+<rect x="1.95679" y="86.2604" width="72" height="46" rx="2.5" transform="rotate(-22.2851 1.95679 86.2604)" stroke="#560BAD" stroke-width="3"/>
+<rect x="50.9568" y="74.1018" width="16.2046" height="13.7497" rx="2.5" transform="rotate(-22.2851 50.9568 74.1018)" stroke="#560BAD" stroke-width="3"/>
 </svg>
