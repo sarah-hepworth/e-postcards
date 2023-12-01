@@ -7,13 +7,14 @@
   top: 0;
   width: 100%;
   background-color: #fff;
-  border: 1px solid var(--brand-purple-1);
+  border-bottom: 1px solid var(--brand-purple-1);
   padding: 2em;
 
   .titleRow {
     display: flex;
-    margin-bottom: 2em;
+    justify-content: space-around;
     text-align: left;
+    margin-bottom: 2em;
 
     .titleContainer {
       width: 15em;
@@ -26,13 +27,11 @@
     .title {
       margin-bottom: 0.5em;
       letter-spacing: 2px;
-      /*font: var(--font-bold);*/
       font-size: 2em;
       color: var(--brand-purple-1)
     }
 
     .tagline {
-      /*font: var(--font-light-italic);*/
     }
 
     .searchContainer {
@@ -53,6 +52,7 @@
   .items {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
 
     .item {
