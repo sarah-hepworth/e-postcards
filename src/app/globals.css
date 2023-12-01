@@ -1,11 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body,
 #root {
   height: 100%;
+  background-color: #fff
 }
 
 body {
   font: var(--font);
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
 }
 
 :root {
@@ -15,6 +25,7 @@ body {
   --brand-purple-1: #7209B7;
   --brand-purple-2: #560BAD;
   --brand-purple-3: #480CA8;
+  --brand-purple-4: #190646;
 
   --brand-blue-1: #3A0CA3;
   --brand-blue-2: #3F37C9;
@@ -23,8 +34,9 @@ body {
 
   --brand-black: #0b1c24;
 
-  --font: 18px / 1.5 "Roboto-Regular", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
-  --font-medium: 18px / 1.5 "Roboto-Medium", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
-  --font-bold: 18px / 1.5 "Roboto-Bold", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
-  --font-italic: 18px / 1.5 "Roboto-Italic", open_sansregular, -apple-system, system-ui, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
+  --font: 18px / 1.5;
+  --font-medium: 18px / 1.5;
+  --font-bold: 18px / 1.5;
+  --font-italic: 18px / 1.5;
+  --font-light-italic: 18px / 1.5;
 }
