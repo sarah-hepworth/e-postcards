@@ -10,7 +10,7 @@ body,
 }
 
 body {
-  font: var(--font) !important;
+  font: var(--font);
   margin: 0;
 }
 
@@ -34,9 +34,9 @@ h1, h2, h3, h4, h5 {
 
   --brand-black: #0b1c24;
 
-  --font: 18px / 1.5 "Roboto-Regular";
-  --font-medium: 18px / 1.5 "Roboto-Medium";
-  --font-bold: 18px / 1.5 "Roboto-Bold";
-  --font-italic: 18px / 1.5 "Roboto-Italic";
-  --font-light-italic: 18px / 1.5 "Roboto-LightItalic";
+  --font: 18px / 1.5;
+  --font-medium: 18px / 1.5;
+  --font-bold: 18px / 1.5;
+  --font-italic: 18px / 1.5;
+  --font-light-italic: 18px / 1.5;
 }

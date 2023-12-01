@@ -26,13 +26,13 @@
     .title {
       margin-bottom: 0.5em;
       letter-spacing: 2px;
-      font: var(--font-bold);
+      /*font: var(--font-bold);*/
       font-size: 2em;
       color: var(--brand-purple-1)
     }
 
     .tagline {
-      font: var(--font-light-italic);
+      /*font: var(--font-light-italic);*/
     }
 
     .searchContainer {

@@ -27,12 +27,10 @@ export const Navigation: FC = (): ReactElement => {
             <Image className={styles.svg} src="/plane-arrival-solid.svg" width="40" height="40" alt="Plane icon" />
             <span>Next Holiday</span>
           </div>
-
           <div className={styles.icon}>
             <Image className={styles.svg} src="/basket-shopping-solid.svg" width="40" height="40" alt="Basket icon" />
             <span>Basket</span>
           </div>
-
           <div className={styles.icon}>
             <Image className={styles.svg} src="/user-large-solid.svg" width="40" height="40" alt="Account icon" />
             <span>Account</span>
@@ -44,11 +42,21 @@ export const Navigation: FC = (): ReactElement => {
         <Link href="/product" className={styles.item}>
           Postcards
         </Link>
-        <div className={styles.item}>Personalise your own</div>
-        <div className={styles.item}>Holiday photobooks</div>
-        <div className={styles.item}>Group postcards</div>
-        <div className={styles.item}>Sustainability</div>
-        <div className={styles.item}>Contact us</div>
+        <Link href="/" className={styles.item}>
+          Personalise your own
+        </Link>
+        <Link href="/" className={styles.item}>
+          Holiday photobooks
+        </Link>
+        <Link href="/" className={styles.item}>
+          Group postcards
+        </Link>
+        <Link href="/" className={styles.item}>
+          Sustainability
+        </Link>
+        <Link href="/" className={styles.item}>
+          Contact us
+        </Link>
       </div>
     </div>
   );
