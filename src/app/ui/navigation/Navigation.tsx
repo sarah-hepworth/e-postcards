@@ -11,7 +11,7 @@ export const Navigation: FC = (): ReactElement => {
           <div className={styles.logoArea}>
             <div className={styles.titleContainer}>
               <Link href="/">
-                <h1 className={`styles.title text-3xl font-bold underline`}>Jellywish</h1>
+                <h1 className={`styles.title text-3xl font-bold py-3`}>Jellywish</h1>
               </Link>
               <span className={styles.tagline}>Postcards delivered straight to their mailbox</span>
             </div>
