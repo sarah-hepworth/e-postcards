@@ -11,7 +11,7 @@ export const Hero: FC = (): ReactElement => {
           <h1 className={styles.title}>Postcards delivered</h1>
 
           <p className={styles.text}>
-            orem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec sodales leo. Vivamus pretium velit
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec sodales leo. Vivamus pretium velit
             enim, eu aliquet nibh maximus et. Pellentesque in elit nisi. Morbi et sapien a mi finibus luctus. Donec
             maximus orci sit amet pretium maximus. Vestibulum pretium, metus eget rutrum consequat, tortor ex lacinia
             orci, sit amet convallis dui dui vel nulla. I
