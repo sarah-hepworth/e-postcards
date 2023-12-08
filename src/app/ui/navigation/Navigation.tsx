@@ -6,23 +6,23 @@ import { robotoBold, robotoRegularItalic } from "@/app/ui/fonts";
 
 export const Navigation: FC = (): ReactElement => {
   return (
-    <div className={`${styles.navigation}`}>
-      <div className={styles.border}>
-        <div className={`container mx-auto`}>
-          <div className={styles.titleRow}>
-            <div className={styles.logoArea}>
-              <div className={styles.titleContainer}>
+    <div className="top-0 w-full bg-indigo-50 mb-4`">
+      <div className="flex justify-center items-start flex-col sticky p-8">
+        <div className="container mx-auto">
+          <div className="flex justify-around mb-4 text-left">
+            <div className="flex w-1/4">
+              <div className="lg:w-auto">
                 <Link href="/">
-                  <h1 className={`${styles.title} text-3xl py-3 ${robotoBold.className}`}>Jellywish</h1>
+                  <h1 className={`tracking-wide text-indigo-700	text-3xl py-3 ${robotoBold.className}`}>JellyWish</h1>
                 </Link>
                 <span className={robotoRegularItalic.className}>Postcards delivered straight to their mailbox</span>
               </div>
 
-              <Image className={styles.svg} src="/logo.svg" width="100" height="100" alt="Plane icon" />
+              <Image src="/logo.svg" width="100" height="100" alt="JellyWish Logo" />
             </div>
 
-            <div className={styles.searchContainer}>
-              <input className={styles.input} placeholder="Search..."></input>
+            <div className="flex justify-center items-center">
+              <input className="max-w-sm p-3 border border-indigo-700/100 rounded-xl" placeholder="Search..."></input>
             </div>
 
             <div className={styles.icons}>
