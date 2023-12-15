@@ -8,7 +8,7 @@ export const Navigation: FC = (): ReactElement => {
     <div className="top-0 w-full bg-indigo-50 mb-4`">
       <div className="flex justify-center items-start flex-col sticky p-4 lg:p-8">
         <div className="container mx-auto">
-          <div className="flex justify-between lg:justify-around mb-4 text-left">
+          <div className="flex justify-between lg:justify-around text-left lg:mb-4">
             <div className="flex w-1/4">
               <div className="hidden lg:w-auto lg:block">
                 <Link href="/">
@@ -17,7 +17,7 @@ export const Navigation: FC = (): ReactElement => {
                 <span className={robotoRegularItalic.className}>Postcards delivered straight to their mailbox</span>
               </div>
 
-              <Image src="/logo.svg" width="100" height="100" alt="JellyWish Logo" />
+              <Image src="/logo.svg" width="50" height="50" alt="JellyWish Logo" />
             </div>
 
             <button
