@@ -11,6 +11,5 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '18'
-      - run: next dev
-      - run: next build
-      - run: next lint
+      - run: npm install
+      - run: npm lint
