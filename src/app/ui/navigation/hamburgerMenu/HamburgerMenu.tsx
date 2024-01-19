@@ -8,7 +8,7 @@ interface Props {
 
 export const HamburgerMenu = (props: Props) => {
   return (
-    <button onClick={(): void => props.setOpen(!props.open)}>
+    <button className="z-[2]" onClick={(): void => props.setOpen(!props.open)}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <motion.path
           strokeWidth="3"

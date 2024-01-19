@@ -1,6 +1,6 @@
 "use client";
-import { motion } from "framer-motion";
 
+import { motion } from "framer-motion";
 import React, { FC, ReactElement, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +13,7 @@ export const Navigation: FC = (): ReactElement => {
 
   const variants = {
     open: {
-      clipPath: "circle(1200px at 50px 50px)",
+      clipPath: "circle(1200px at 90% 50px)",
       transition: {
         type: "spring",
         stiffness: 20
@@ -21,7 +21,7 @@ export const Navigation: FC = (): ReactElement => {
     },
     closed: {
       opacity: 0,
-      clipPath: "circle(20px at 50px 50px)",
+      clipPath: "circle(20px at 90% 50px)",
       transition: {
         delay: 0.5,
         type: "spring",
@@ -48,9 +48,10 @@ export const Navigation: FC = (): ReactElement => {
             </div>
 
             <motion.div animate={openMobileMenu ? "open" : "closed"} className="inline-flex items-center lg:hidden">
-              <motion.div className="" variants={variants}>
+              <motion.div className="bg-white absolute top-0 left-0 h-screen w-max" variants={variants}>
                 <Links />
               </motion.div>
+
               <HamburgerMenu open={openMobileMenu} setOpen={setOpenMobileMenu} />
             </motion.div>
 
