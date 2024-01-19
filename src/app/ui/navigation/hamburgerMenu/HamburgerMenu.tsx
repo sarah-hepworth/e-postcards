@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 
 interface Props {
@@ -5,7 +6,7 @@ interface Props {
   setOpen: (open: boolean) => void;
 }
 
-const HamburgerMenu = (props: Props) => {
+export const HamburgerMenu = (props: Props) => {
   return (
     <button onClick={(): void => props.setOpen(!props.open)}>
       <svg width="23" height="23" viewBox="0 0 23 23">
@@ -32,5 +33,3 @@ const HamburgerMenu = (props: Props) => {
     </button>
   );
 };
-
-export default HamburgerMenu;

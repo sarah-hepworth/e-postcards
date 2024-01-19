@@ -1,9 +1,34 @@
-import { FC, ReactElement } from "react";
+"use client";
+import { motion } from "framer-motion";
+
+import React, { FC, ReactElement, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { robotoBold, robotoRegularItalic } from "@/app/ui/fonts";
+import { HamburgerMenu } from "@/app/ui/navigation/hamburgerMenu/HamburgerMenu";
 
 export const Navigation: FC = (): ReactElement => {
+  const [openMobileMenu, setOpenMobileMenu] = React.useState<boolean>(false);
+
+  // const variants = {
+  //   open: {
+  //     clipPath: "circle(1200px at 50px 50px)",
+  //     transition: {
+  //       type: "spring",
+  //       stiffness: 20
+  //     }
+  //   },
+  //   closed: {
+  //     clipPath: "circle(20px at 50px 50px)",
+  //     transition: {
+  //       delay: 0.5,
+  //       type: "spring",
+  //       stiffness: 400,
+  //       damping: 40
+  //     }
+  //   }
+  // };
+
   return (
     <div className="top-0 w-full bg-indigo-50 mb-4`">
       <div className="flex justify-center items-start flex-col sticky p-4 lg:p-8">
@@ -20,30 +45,34 @@ export const Navigation: FC = (): ReactElement => {
               <Image src="/logo.svg" width="50" height="50" alt="JellyWish Logo" />
             </div>
 
-            <button
-              data-collapse-toggle="navbar-default"
-              type="button"
-              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden"
-              aria-controls="navbar-default"
-              aria-expanded="false"
-            >
-              <span className="sr-only">Open main menu</span>
-              <svg
-                className="w-5 h-5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 17 14"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M1 1h15M1 7h15M1 13h15"
-                />
-              </svg>
-            </button>
+            <motion.div animate={openMobileMenu ? "open" : "closed"} className="inline-flex items-center lg:hidden">
+              <HamburgerMenu open={openMobileMenu} setOpen={setOpenMobileMenu} />
+            </motion.div>
+
+            {/*<button*/}
+            {/*  data-collapse-toggle="navbar-default"*/}
+            {/*  type="button"*/}
+            {/*  className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden"*/}
+            {/*  aria-controls="navbar-default"*/}
+            {/*  aria-expanded="false"*/}
+            {/*>*/}
+            {/*  <span className="sr-only">Open main menu</span>*/}
+            {/*  <svg*/}
+            {/*    className="w-5 h-5"*/}
+            {/*    aria-hidden="true"*/}
+            {/*    xmlns="http://www.w3.org/2000/svg"*/}
+            {/*    fill="none"*/}
+            {/*    viewBox="0 0 17 14"*/}
+            {/*  >*/}
+            {/*    <path*/}
+            {/*      stroke="currentColor"*/}
+            {/*      stroke-linecap="round"*/}
+            {/*      stroke-linejoin="round"*/}
+            {/*      stroke-width="2"*/}
+            {/*      d="M1 1h15M1 7h15M1 13h15"*/}
+            {/*    />*/}
+            {/*  </svg>*/}
+            {/*</button>*/}
 
             <div className="hidden lg:flex justify-center items-center">
               <input className="max-w-sm p-3 border border-indigo-700/100 rounded-xl" placeholder="Search..."></input>
