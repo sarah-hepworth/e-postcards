@@ -7,6 +7,7 @@ import Link from "next/link";
 import { robotoBold, robotoRegularItalic } from "@/app/ui/fonts";
 import { HamburgerMenu } from "@/app/ui/navigation/hamburgerMenu/HamburgerMenu";
 import { Links } from "@/app/ui/navigation/links/Links";
+import { HamburgerMenuCssAnimationOnly } from "@/app/ui/navigation/hamburgerMenu/HamburgerMenuCssAnimationOnly";
 
 export const Navigation: FC = (): ReactElement => {
   const [openMobileMenu, setOpenMobileMenu] = React.useState<boolean>(false);
@@ -46,6 +47,7 @@ export const Navigation: FC = (): ReactElement => {
 
               <Image src="/logo.svg" width="50" height="50" alt="JellyWish Logo" />
             </div>
+            {/*<HamburgerMenuCssAnimationOnly open={openMobileMenu} setOpen={setOpenMobileMenu} />*/}
 
             <motion.div animate={openMobileMenu ? "open" : "closed"} className="inline-flex items-center lg:hidden">
               <motion.div className="bg-white absolute top-0 left-0 h-screen w-max" variants={variants}>
